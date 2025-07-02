@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function (){
 const addButton=document.getElementById("add")
 const minhasTarefas=document.getElementById("minhasTarefas")
 const listInput=document.getElementById("u")
@@ -62,4 +63,5 @@ addButton.addEventListener("click", function(){
    
     
     }
- })
+ });
+ });
