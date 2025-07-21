@@ -3,6 +3,12 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     gap: 20px;
 }
+@media screen and(max-width:600px){
+    body{
+        font-size: 14px;
+        padding: 10px;
+    }
+}
 .i{
  
     text-align: center;
