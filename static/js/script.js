@@ -1,7 +1,11 @@
-document.addEventListener("DOMContentLoaded", function (){
-const addButton=document.getElementById("add")
-const minhasTarefas=document.getElementById("minhasTarefas")
-const listInput=document.getElementById("u")
+window.onload=function (){
+    const addButton=document.getElementById("add");
+    const minhasTarefas=document.getElementById("minhasTarefas");
+    const listInput=document.getElementById("u");
+
+    if (!addButton || !minhasTarefas || !listInput){
+        console.warn("nenhum elemento foi encontrado!");
+    }
 
 function removeElement(event){
     const taskToDelete=event.target.previousSibling.innerText
@@ -64,4 +68,4 @@ addButton.addEventListener("click", function(){
     
     }
  });
- });
+ };
