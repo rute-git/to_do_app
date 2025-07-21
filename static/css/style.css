@@ -5,8 +5,8 @@ body{
 }
 @media screen and(max-width:600px){
     body{
-        font-size: 14px;
-        padding: 10px;
+        font-size: 40px;
+        padding: 30px;
     }
 }
 .i{
