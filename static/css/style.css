@@ -1,108 +1,54 @@
-/* Aplica fundo e centralização vertical/horizontal ao body */
-body {
+body{
     background-color: aqua;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    box-sizing: border-box;
-    gap: 1rem;
+    gap: 20px;
 }
-
-/* Título centralizado */
-.i {
+@media screen and(max-width:600px){
+    body{
+        font-size: 40px;
+        padding: 30px;
+    }
+}
+.i{
+ 
     text-align: center;
-    margin-bottom: 1rem;
 }
-
-/* Input e botão lado a lado */
 div {
+    width: 450px;
+    margin: auto;
+    font-size: 19px;
+}
+.content--add-item{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    padding: 0 20px;
-    width: 100%;
-    max-width: 450px;
-    box-sizing: border-box;
+    gap:1rem;
+  
+}
+#u{
+    width: 390px;
+    height: 25px;
+     border-radius: 10px;
 }
 
-/* Input de tarefa */
-#u {
-    flex: 1;
-    height: 35px;
-    padding: 0 10px;
-    border-radius: 10px;
-    border: none;
-    font-size: 16px;
-    min-width: 0;
-}
 
-/* Botão adicionar */
-#add {
+#add{
     background-color: rgb(0, 255, 153);
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.4s;
-    padding: 10px 16px;
-    font-size: 20px;
-    border: none;
+     border-radius: 10px;
+     cursor: pointer;
+     transition: .40s;
 }
-#add:hover {
+#add:hover{
     background-color: rgb(0, 82, 100);
-    color: white;
 }
-
-/* Lista de tarefas */
-#minhasTarefas {
-    width: 100%;
-    max-width: 450px;
+#minhasTarefas{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 0 20px;
-    box-sizing: border-box;
+    padding: 0%;
 }
-
-/* Cada tarefa */
-#minhasTarefas div {
+#minhasTarefas div{
+  
+    text-transform: capitalize;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background-color: aliceblue;
-    padding: 10px;
-    border-radius: 8px;
-    text-transform: capitalize;
-    word-break: break-word;
-}
-
-/* Responsivo para telas pequenas */
-@media screen and (max-width: 600px) {
-    body {
-        padding: 20px 10px;
-        gap: 1.5rem;
-    }
-
-    div {
-        flex-direction: column;
-        gap: 0.8rem;
-    }
-
-    #u {
-        width: 100%;
-        font-size: 16px;
-        height: 32px;
-    }
-
-    #add {
-        width: 100%;
-        font-size: 18px;
-        padding: 10px;
-    }
 }
