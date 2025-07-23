@@ -7,9 +7,9 @@ body {
 
 @media screen and (max-width: 400px) {
     body {
-        font-size: 15px;   
-        padding: 10px;    
-        line-height: 1.4;  
+        font-size: 11px;   
+        padding: 7px;    
+        line-height: 1.3;  
     }
 }
 
