@@ -5,10 +5,11 @@ body {
     padding: 20px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
     body {
-        font-size: 30px;
-        padding: 25px;
+        font-size: 18px;   
+        padding: 15px;    
+        line-height: 1.5;  
     }
 }
 
